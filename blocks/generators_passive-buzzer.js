@@ -1,5 +1,4 @@
-module.exports = function(Blockly) {
-  Blockly.JavaScript["ky_006_passive_buzzer_block"] = function(block) {
+Blockly.JavaScript["ky_006_passive_buzzer_block"] = function(block) {
     var text_ky_006_passive_buzzer_pin = block.getFieldValue(
       "KY_006_PASSIVE_BUZZER_PIN"
     );
@@ -9,16 +8,15 @@ module.exports = function(Blockly) {
     );
     // TODO: Assemble JavaScript into code variable.
     var code = `
-	#VARIABLE
-		int KY_006_PASSIVE_BUZZER_PIN = ${text_ky_006_passive_buzzer_pin}; // set the buzzer control digital IO pin
-	#END
+  #VARIABLE
+    int KY_006_PASSIVE_BUZZER_PIN = ${text_ky_006_passive_buzzer_pin}; // set the buzzer control digital IO pin
+  #END
 
-	#SETUP
-		pinMode(KY_006_PASSIVE_BUZZER_PIN, OUTPUT); // set pin 8 as output
-	#END
+  #SETUP
+    pinMode(KY_006_PASSIVE_BUZZER_PIN, OUTPUT); // set pin 8 as output
+  #END
 
-	${variable_ky_006_passive_buzzer_state} = ${text_ky_006_passive_buzzer_pin};
+  ${variable_ky_006_passive_buzzer_state} = ${text_ky_006_passive_buzzer_pin};
     `;
     return code;
   };
-};
