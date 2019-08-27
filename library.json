@@ -1,17 +1,17 @@
 {
   "name" : "kbide-plugin-passive-buzzer",
-  "title": "passive-buzzer",
+  "title": "KY-006 PASSIVE BUZZER MODULE",
   "keywords": "passive-buzzer, esp32, esp8266, arduino",
   "description": "passive-buzzer plugin for KB-IDE",
   "category":"",
   "git": "https://github.com/cmmc-kbide/kbide-plugin-passive-buzzer/",
-  "author": "cmmakerclub",
+  "author": "Prawared",
   "email": "",
   "url": "https://github.com/cmmc-kbide/kbide-plugin-passive-buzzer/",
   "version": "1.0.0",
   "board" : "",
   "platform": ["arduino-esp32"],
   "license": "",
-  "image" : "/static/display.png",
+  "image" : "/static/display.jpg",
   "homepage": "http://www.kbide.org"
 }
